@@ -60,7 +60,7 @@ model_rf.fit(X_full_trg_encoded,y_full_trg)
 
 #saving the model and dv as pickle
 print('Saving pickle file...')
-with open("project_one_model.pkl","wb") as f_out:
+with open("model/project_one_model.pkl","wb") as f_out:
     pickle.dump((dv,model_rf),f_out)
 
 print('Model saved to project_one_model.pkl')
