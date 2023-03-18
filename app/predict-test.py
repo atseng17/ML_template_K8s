@@ -15,9 +15,9 @@ candidate = [{"gender": "M",
   }]
 
 
-url = "http://0.0.0.0:9696/predict"
+# url = "http://0.0.0.0:9696/predict" # This for local flast testing
+url = "http://127.0.0.1:59841/predict" # This is  based on the external IP from pod
 
-# url = "http://127.0.0.1:55395/predict"
 result = requests.post(url=url,json=candidate).json()
 print('The Model Prediction for placement :',result)
 
