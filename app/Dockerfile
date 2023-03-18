@@ -7,7 +7,7 @@ RUN pip install -r requirements.txt
 
 WORKDIR /app
 
-COPY ["*.py", "project_one_model.pkl", "./"]
+COPY ["predict.py", "project_one_model.pkl", "./"]
 
 EXPOSE 9696
 
